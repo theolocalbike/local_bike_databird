@@ -59,6 +59,7 @@ brands as (
 select
 
     -- Grain
+    oi.order_item_id,
     oi.order_id,
     oi.item_id,
 
