@@ -1,0 +1,12 @@
+models:
+  - name: int_sales_enriched
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: item_id
+        tests:
+          - not_null
+      - name: net_revenue
+        tests:
+          - not_null
