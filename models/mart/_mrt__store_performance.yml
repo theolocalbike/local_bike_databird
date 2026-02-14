@@ -1,0 +1,7 @@
+version: 2
+
+models:
+
+  - name: mrt_store_performance
+    description: |
+      To complete
