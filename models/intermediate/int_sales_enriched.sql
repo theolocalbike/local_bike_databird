@@ -3,56 +3,56 @@
 with order_items as (
 
     select *
-    from {{ ref('stg_sales_database__order_items') }}
+    from {{ ref('stg_local_bike_database__order_items') }}
 
 ),
 
 orders as (
 
     select *
-    from {{ ref('stg_sales_database__orders') }}
+    from {{ ref('stg_local_bike_database__orders') }}
 
 ),
 
 customers as (
 
     select *
-    from {{ ref('stg_sales_database__customers') }}
+    from {{ ref('stg_local_bike_database__customers') }}
 
 ),
 
 stores as (
 
     select *
-    from {{ ref('stg_sales_database__stores') }}
+    from {{ ref('stg_local_bike_database__stores') }}
 
 ),
 
 staffs as (
 
     select *
-    from {{ ref('stg_sales_database__staffs') }}
+    from {{ ref('stg_local_bike_database__staffs') }}
 
 ),
 
 products as (
 
     select *
-    from {{ ref('stg_production_database__products') }}
+    from {{ ref('stg_local_bike_database__products') }}
 
 ),
 
 categories as (
 
     select *
-    from {{ ref('stg_production_database__categories') }}
+    from {{ ref('stg_local_bike_database__categories') }}
 
 ),
 
 brands as (
 
     select *
-    from {{ ref('stg_production_database__brands') }}
+    from {{ ref('stg_local_bike_database__brands') }}
 
 )
 

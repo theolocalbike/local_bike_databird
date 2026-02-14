@@ -3,21 +3,21 @@
 with stocks as (
 
     select *
-    from {{ ref('stg_production_database__stocks') }}
+    from {{ ref('stg_local_bike_database__stocks') }}
 
 ),
 
 products as (
 
     select *
-    from {{ ref('stg_production_database__products') }}
+    from {{ ref('stg_local_bike_database__products') }}
 
 ),
 
 stores as (
 
     select *
-    from {{ ref('stg_sales_database__stores') }}
+    from {{ ref('stg_local_bike_database__stores') }}
 
 )
 
