@@ -1,0 +1,7 @@
+version: 2
+
+models:
+
+  - name: mrt_stock_analysis
+    description: |
+      To complete
