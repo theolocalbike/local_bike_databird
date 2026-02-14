@@ -3,7 +3,7 @@
 with staffs as (
 
     select *
-    from {{ ref('stg_sales_database__staffs') }}
+    from {{ ref('stg_local_bike_database__staffs') }}
 
 )
 
