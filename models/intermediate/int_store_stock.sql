@@ -22,7 +22,7 @@ stores as (
 )
 
 select
-
+    CONCAT(st.store_id, '_', st.product_id) AS store_product_id,
     st.store_id,
     s.store_name,
     s.city as store_city,

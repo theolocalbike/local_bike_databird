@@ -17,7 +17,7 @@ models:
 
   - name: int_store_stock
     columns:
-      - name: store_id
+      - name: store_product_id
         description: "Primary key for this table."
         tests:
           - not_null
