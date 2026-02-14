@@ -5,6 +5,7 @@ models:
         description: "Primary key for this table."
         tests:
           - not_null
+          - unique
 
   - name: int_staff_hierarchy
     columns:
@@ -12,10 +13,12 @@ models:
         description: "Primary key for this table."
         tests:
           - not_null
+          - unique
 
   - name: int_store_stock
     columns:
       - name: store_id
         description: "Primary key for this table."
         tests:
-          - not_null            
+          - not_null
+          - unique            
