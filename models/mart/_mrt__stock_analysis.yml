@@ -4,4 +4,25 @@ models:
 
   - name: mrt_stock_analysis
     description: |
-      To complete
+      This model aggregates Store Stock Product data from the `int_store_stock` table.
+
+      It provides key metrics for each customer, including:
+      - Sales To Stock Ratio
+      - Stock Quantity
+      - Total Units Sold
+      - Repeater status (whether the customer has placed more than one order)
+      - Lifetime value
+      - Total number of orders
+      - Total units sold
+
+    columns:
+
+      - name: Product_id
+        tests :
+          - not_null
+
+      - name: Store_id
+        tests :
+          - not_null
+
+      
