@@ -4,4 +4,18 @@ models:
 
   - name: mrt_revenue_time
     description: |
-      To complete
+      This model aggregates revenue by order date from the `int_sales_enriched` table.
+
+      It provides key metrics for each customer, including:
+      - Average order value
+      - Net Revenue
+      - Total Customers
+      - Total Discount Given
+      - Total Orders
+      - Total Units Sold
+
+    columns:
+
+      - name: Order_Date
+        tests:
+          - not_null
