@@ -1,0 +1,26 @@
+version: 2
+
+models:
+
+  - name: mrt_stock_analysis
+    description: |
+      This model aggregates Store Stock Product data from the `int_store_stock` table at product and store level.
+
+      It provides key metrics for each customer, including:
+      - Average_daily_sales (Average number of product sold by day)
+      - Days_of_sales (Difference between the first and last purchase of the product)
+      - Stock Coverage Days (Number of days that the actual stock can cover)
+      - Stock Quantity
+      - Total Units Sold
+
+    columns:
+
+      - name: Product_id
+        tests :
+          - not_null
+
+      - name: Store_id
+        tests :
+          - not_null
+
+      

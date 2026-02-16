@@ -12,6 +12,7 @@ select
     customer_id,
     customer_city,
     customer_state,
+    store_name,
 
     min(order_date) as first_purchase_date,
     max(order_date) as last_purchase_date,
@@ -32,4 +33,5 @@ from sales
 group by
     customer_id,
     customer_city,
-    customer_state
+    customer_state,
+    store_name
