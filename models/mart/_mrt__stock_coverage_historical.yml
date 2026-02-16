@@ -2,7 +2,7 @@ version: 2
 
 models:
 
-  - name: mrt_stock_analysis
+  - name: mrt__stock_coverage_historical
     description: |
       This model aggregates Store Stock Product data from the `int_store_stock` table at product and store level.
 
