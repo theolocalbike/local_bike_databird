@@ -5,6 +5,17 @@ models:
   - name: mrt__customer_metrics
     description: |
       Aggregates customer order data from `int_sales_enriched`.
+      
+      It provides key metrics for each customer, including:
+      - First Purchase Date
+      - Last Purchase Date
+      - Avg order value
+      - Is Repeat Customer
+      - Lifetime Value
+      - Total Orders
+      - Total Units
+      
+
 
     columns:
 
@@ -16,6 +27,10 @@ models:
       - name: first_purchase_date
         tests:
           - not_null
+
+      - name: last_purchase_date
+        tests:
+          - not_null    
 
       - name: avg_order_value
         tests:

@@ -6,7 +6,7 @@ models:
     description: |
       This model aggregates Store Stock Product data from the `int_store_stock` table at product and store level.
 
-      It provides key metrics for each customer, including:
+      It provides key metrics for each couple store-product, including:
       - Average_daily_sales (Average number of product sold by day)
       - Days_of_sales (Difference between the first and last purchase of the product)
       - Stock Coverage Days (Number of days that the actual stock can cover)

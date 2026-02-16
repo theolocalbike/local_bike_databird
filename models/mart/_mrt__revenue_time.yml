@@ -4,9 +4,9 @@ models:
 
   - name: mrt__revenue_time
     description: |
-      This model aggregates revenue by order date from the `int_sales_enriched` table.
+      This model aggregates multiple KPI's link to revenue by order date from the `int_sales_enriched` table.
 
-      It provides key metrics for each customer, including:
+      It provides key metrics for each store, including:
       - Average order value
       - Net Revenue
       - Total Customers
