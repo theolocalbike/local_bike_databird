@@ -12,6 +12,7 @@ select
     order_date,
     order_year,
     order_month,
+    store_name,
 
     count(distinct order_id) as total_orders,
     count(distinct customer_id) as total_customers,
@@ -26,4 +27,5 @@ from sales
 group by
     order_date,
     order_year,
-    order_month
+    order_month,
+    store_name

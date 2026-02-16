@@ -8,7 +8,7 @@ with sales as (
 )
 
 select
-
+    order_date,
     store_id,
     store_name,
     store_city,
@@ -29,6 +29,7 @@ select
 
 from sales
 group by
+    order_date,
     store_id,
     store_name,
     store_city,
