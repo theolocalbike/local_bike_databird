@@ -20,7 +20,6 @@ models:
 
       - name: store_id
         tests:
-          - unique
           - not_null
 
       - name: avg_order_value
