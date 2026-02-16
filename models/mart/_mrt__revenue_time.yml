@@ -2,7 +2,7 @@ version: 2
 
 models:
 
-  - name: mrt_revenue_time
+  - name: mrt__revenue_time
     description: |
       This model aggregates revenue by order date from the `int_sales_enriched` table.
 
