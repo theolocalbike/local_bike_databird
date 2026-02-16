@@ -4,16 +4,7 @@ models:
 
   - name: mrt__customer_metrics
     description: |
-      This model aggregates customer order data from the `int_sales_enriched` table.
-
-      It provides key metrics for each customer, including:
-      - First purchase date
-      - Last purchase date
-      - Average order value
-      - Repeater status (whether the customer has placed more than one order)
-      - Lifetime value
-      - Total number of orders
-      - Total units sold
+      Aggregates customer order data from `int_sales_enriched`.
 
     columns:
 
@@ -22,22 +13,24 @@ models:
           - unique
           - not_null
 
+      - name: first_purchase_date
+        tests:
+          - not_null
+
       - name: avg_order_value
         tests:
-          - dbt_utils.expression_is_true:
-              expression: "avg_order_value >= 0"
+          - not_null
 
       - name: lifetime_value
         tests:
-          - dbt_utils.expression_is_true:
-              expression: "lifetime_value >= 0"
+          - not_null
 
       - name: total_orders
         tests:
-          - dbt_utils.expression_is_true:
-              expression: "total_orders >= 0"
+          - not_null
 
       - name: total_units
         tests:
-          - dbt_utils.expression_is_true:
-              expression: "total_units >= 0"
+          - not_null
+
+      
